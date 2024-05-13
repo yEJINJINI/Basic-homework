@@ -1,0 +1,11 @@
+/* 문제1) */
+.title {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px black;
+}
+/* 문제2) */
+.btn {
+  background-color: black;
+  color: white;
+}
