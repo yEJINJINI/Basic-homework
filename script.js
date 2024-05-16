@@ -1,12 +1,13 @@
 //문제1.
 const clickedBox = document.querySelectorAll(".box");
-for (let i = 0; i < 3; i++) {
-  document.querySelector("#container").addEventListener("click", (event) => {
+
+document.querySelector("#container").addEventListener("click", (event) => {
+  for (let i = 0; i < 3; i++) {
     if (event.target === clickedBox[i]) {
       clickedBox[i].classList.add("clicked");
     }
-  });
-}
+  }
+});
 
 //문제2.
 function getSquare(number) {

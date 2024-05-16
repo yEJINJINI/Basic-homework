@@ -1,19 +1,6 @@
 //문제 3. 스크롤
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  const content = document.querySelector(".content");
-  if (content) {
-    content.addEventListener("scroll", function () {
-      console.log(content.scrollTop);
-    });
-  } else {
-    console.error("Element with class 'content' not found.");
-  }
-});
-*/
-const content = document.querySelector(".content");
-content.addEventListener("click", function (e) {
-  console.log(e);
+window.addEventListener("scroll", () => {
+  console.log(scrollY);
 });
 
 //문제 4.
