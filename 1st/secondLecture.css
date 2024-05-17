@@ -1,0 +1,110 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  opacity: 0.8;
+  display: none;
+  padding-top: 100px;
+}
+.modal-content {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+}
+.warning {
+  color: red;
+  display: none;
+}
+
+/* 스크롤 */
+main {
+  height: 100vh;
+  background-color: bisque;
+}
+
+.up-button {
+  /* 1. 스크롤 상관없이 우리가 보는 화면에서 특정 위치 고정 */
+  position: fixed;
+  /* 2. 우측 아래에 두기 */
+  right: 24px;
+  bottom: 24px;
+  display: none;
+}
+
+/* 마우스 오버 :탭 */
+.mousehover {
+  margin: 0;
+  /* 좌우로 배치 */
+  display: flex;
+}
+
+.tab {
+  /* 리스트 점 안보이게 */
+  list-style: none;
+  /* 사이드바 처럼 보이게 */
+  width: 100px;
+  height: 50vh;
+  background-color: #f1f1f1;
+  /* 불필요한 공간 없애기 */
+  margin: 0;
+  padding: 0;
+}
+
+.tab-btn {
+  /* 버튼 간 공간 만들기 */
+  padding: 24px;
+}
+
+/* hover css 처리 */
+.tab-btn:hover {
+  background-color: grey;
+}
+
+.tab-content {
+  /* 내용 공간 만들기 */
+  padding: 12px;
+  display: none;
+}
+
+/* 보이게 만들 클래스 추가 */
+.show {
+  display: block;
+}
+
+/*슬라이드 */
+.overflow-div {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-container {
+  /*width: 300vw;*/
+  display: flex;
+  /* translate 값을 -100, -200으로 바꿔보자 */
+  transform: translate(0vw);
+  transition: all 1s; /* 해당 태그에 변화가 일어나면 모든 속성이 1초의 간격으로 변화한다. */
+}
+
+.slide {
+  width: 100vw;
+  height: 300px;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.next {
+  right: 0;
+}
