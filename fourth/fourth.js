@@ -69,3 +69,17 @@ const user = {
 };
 const { 이름, 나이, 주소 } = user;
 console.log({ 이름, 나이, 주소 });
+// console.log(`${이름} ${나이} ${주소}`);
+
+//문제8)
+//1.2.
+localStorage.setItem("user", JSON.stringify(user));
+
+const currentUser = JSON.parse(localStorage.getItem("user"));
+console.log("localStorage=> ", currentUser);
+//3.
+currentUser.나이 = 30;
+console.log(currentUser);
+//4.
+localStorage.removeItem("user");
+console.log(localStorage.getItem("user"));
