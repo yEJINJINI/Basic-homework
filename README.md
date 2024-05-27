@@ -1,8 +1,10 @@
-# React + Vite
+## 리액트 1강 과제 - 리액트 기본 개념 & useState 익숙해지기
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**<리액트 counter 앱 만들기>**
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. 숫자(초기값: 0)와 +, -, reset 버튼을 만든다.
+2. + 버튼 클릭 시 숫자를 1 증가시킨다.
+3. - 버튼 클릭 시 숫자를 1 감소시킨다.
+4.  reset 버튼 클릭 시 숫자를 다시 0으로 변경한다.
+5. className과 css 파일을 생성하고, 원하는 css 를 추가한다. (화려 X)
+6. 태그 최상단에 Fragment를 추가해본다.
