@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Fragment } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,30 +10,24 @@ function App() {
   const minusHandler = () => {
     setCount(count - 1);
   };
+  const resetHandler = () => {
+    setCount(0);
+  };
 
   return (
-    <div>
-      Count: {count >= 0 ? count : setCount(0)}
-      <button onClick={plusHandler}>+</button>
-      <button onClick={minusHandler}>-</button>
-    </div>
+    <Fragment>
+      <h1>Count: {count}</h1>
+      <button className="plusBtn" onClick={plusHandler}>
+        +
+      </button>
+      <button className="minusBtn" onClick={minusHandler}>
+        -
+      </button>
+      <button className="resetBtn" onClick={resetHandler}>
+        Reset
+      </button>
+    </Fragment>
   );
 }
 
 export default App;
-
-// import { useState } from "react";
-// function App() {
-//   const [isDark, setIsDark] = useState(false);
-//   const changeMode = () => {
-//     setIsDark(!isDark);
-//   };
-//   return (
-//     <div>
-//       {isDark ? "다크모드" : "화이트모드"}
-//       <button onClick={changeMode}>change</button>
-//     </div>
-//   );
-// }
-
-// export default App;
